@@ -21,34 +21,34 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-secondary text-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent">
-                <Shield className="h-5 w-5 text-accent-foreground" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald">
+                <Shield className="h-5 w-5 text-white" />
               </div>
               <div>
-                <span className="text-lg font-bold">FinSafe</span>
-                <span className="text-lg font-bold text-accent">Edu</span>
+                <span className="text-lg font-bold text-foreground">FinSafe</span>
+                <span className="text-lg font-bold text-emerald">Edu</span>
               </div>
             </Link>
-            <p className="text-sm text-primary-foreground/70 leading-relaxed">
+            <p className="text-sm text-foreground/70 leading-relaxed">
               Platform edukasi fintech dan pencegahan penipuan transaksi keuangan di Indonesia.
             </p>
           </div>
 
           {/* Edukasi */}
           <div>
-            <h4 className="font-semibold mb-4 text-accent">Edukasi</h4>
+            <h4 className="font-semibold mb-4 text-emerald">Edukasi</h4>
             <ul className="space-y-2">
               {footerLinks.edukasi.map((link) => (
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
+                    className="text-sm text-foreground/70 hover:text-emerald transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -59,13 +59,13 @@ export function Footer() {
 
           {/* Layanan */}
           <div>
-            <h4 className="font-semibold mb-4 text-accent">Layanan</h4>
+            <h4 className="font-semibold mb-4 text-emerald">Layanan</h4>
             <ul className="space-y-2">
               {footerLinks.layanan.map((link) => (
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
+                    className="text-sm text-foreground/70 hover:text-emerald transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -76,7 +76,7 @@ export function Footer() {
 
           {/* Tautan Resmi */}
           <div>
-            <h4 className="font-semibold mb-4 text-accent">Tautan Resmi</h4>
+            <h4 className="font-semibold mb-4 text-emerald">Tautan Resmi</h4>
             <ul className="space-y-2">
               {footerLinks.resmi.map((link) => (
                 <li key={link.href}>
@@ -84,7 +84,7 @@ export function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors inline-flex items-center gap-1"
+                    className="text-sm text-foreground/70 hover:text-emerald transition-colors inline-flex items-center gap-1"
                   >
                     {link.label}
                     <ExternalLink className="h-3 w-3" />
@@ -96,10 +96,10 @@ export function Footer() {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
-          <div className="bg-primary-foreground/5 rounded-xl p-6">
-            <h5 className="font-semibold text-accent mb-2">Disclaimer</h5>
-            <p className="text-xs text-primary-foreground/60 leading-relaxed">
+        <div className="mt-12 pt-8 border-t border-foreground/10">
+          <div className="bg-background/30 rounded-xl p-6">
+            <h5 className="font-semibold text-emerald mb-2">Disclaimer</h5>
+            <p className="text-xs text-foreground/70 leading-relaxed">
               Website ini dikembangkan untuk tujuan edukasi dan pencegahan penipuan transaksi keuangan. 
               Informasi yang disajikan bersifat edukatif dan tidak dimaksudkan sebagai nasihat keuangan profesional. 
               Apabila Anda menjadi korban penipuan transaksi keuangan, segera laporkan melalui{" "}
@@ -107,14 +107,14 @@ export function Footer() {
                 href="https://iasc.ojk.go.id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent hover:underline"
+                className="text-emerald hover:underline"
               >
                 Pusat Penanganan Penipuan Transaksi Keuangan (IASC OJK)
               </a>
               .
             </p>
           </div>
-          <div className="mt-6 text-center text-xs text-primary-foreground/50">
+          <div className="mt-6 text-center text-xs text-foreground/50">
             <p>© {new Date().getFullYear()} FinSafeEdu. Dikembangkan untuk tujuan akademik.</p>
           </div>
         </div>
