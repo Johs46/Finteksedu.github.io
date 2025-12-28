@@ -147,7 +147,7 @@ const AIAdvisorPage = () => {
               </div>
             </div>
 
-            <p className="text-xs text-muted-foreground text-center mt-4">Penanggung Jawab: Jo</p>
+            <p className="text-xs text-muted-foreground text-center mt-4">Penanggung Jawab: Jonathan Halomoan Simanjuntak</p>
           </div>
         </div>
       </section>
