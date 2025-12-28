@@ -21,11 +21,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-<<<<<<< HEAD
-    <footer className="bg-secondary text-primary-foreground">
-=======
     <footer className="bg-secondary text-foreground">
->>>>>>> 939930ee00c0cb379e1a1e7248251c27ac45ab5b
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
